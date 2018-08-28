@@ -1,0 +1,130 @@
+Computing paths from a 
+
+
+Itr: 0
+Distance to a:0.0
+Pred: a
+All vertices except for vertex 'a' have a distance of INFINITY and the predecessor as vertex 'a'.
+
+Itr: 1
+
+Any vertex in the graph, that is not listed as a target in this iteration can be assumed to have the distance and predcessor values previously assigned in the last iteration. 
+
+#Root Node: a 
+Target:d
+Distance to d: 10.0
+Pred: a 
+Path: [a , d]
+In Queue: [d]
+
+
+#Root Node: a 
+Target:b 
+Distance to b : 5.0
+Pred: a 
+Path: [a , b ]
+In Queue: [b , d]
+
+
+Itr: 2
+
+Any vertex in the graph, that is not listed as a target in this iteration can be assumed to have the distance and predcessor values previously assigned in the last iteration. 
+
+#Root Node: b 
+Target:c
+Distance to c: 12.0
+Pred: b 
+Path: [a , b , c]
+In Queue: [c]
+
+
+#Root Node: b 
+Target:e
+Distance to e: 6.0
+Pred: b 
+Path: [a , b , e]
+In Queue: [e, c]
+
+
+Itr: 3
+
+Any vertex in the graph, that is not listed as a target in this iteration can be assumed to have the distance and predcessor values previously assigned in the last iteration. 
+
+#Root Node: e
+Target:f
+Distance to f: 8.0
+Pred: e
+Path: [a , b , e, f]
+In Queue: [f]
+
+
+#Root Node: e
+Target:h
+Distance to h: 13.0
+Pred: e
+Path: [a , b , e, h]
+In Queue: [f, h]
+
+
+Itr: 4
+
+Any vertex in the graph, that is not listed as a target in this iteration can be assumed to have the distance and predcessor values previously assigned in the last iteration. 
+
+#Root Node: f
+Target:i
+Distance to i: 13.0
+Pred: f
+Path: [a , b , e, f, i]
+In Queue: [i]
+
+
+Itr: 5
+
+Any vertex in the graph, that is not listed as a target in this iteration can be assumed to have the distance and predcessor values previously assigned in the last iteration. 
+
+#Root Node: i
+Target:l
+Distance to l: 25.0
+Pred: i
+Path: [a , b , e, f, i, l]
+In Queue: [l]
+
+
+SHORTEST PATH DETERMINED (LAST ITERATION):
+Distance to a : 0.0
+Path: [a ]
+
+Distance to g: Infinity
+Path: [g]
+
+Distance to e: 6.0
+Path: [a , b , e]
+
+Distance to f: 8.0
+Path: [a , b , e, f]
+
+Distance to d: 10.0
+Path: [a , d]
+
+Distance to i: 13.0
+Path: [a , b , e, f, i]
+
+Distance to c: 12.0
+Path: [a , b , c]
+
+Distance to h: 13.0
+Path: [a , b , e, h]
+
+Distance to b : 5.0
+Path: [a , b ]
+
+Distance to k: Infinity
+Path: [k]
+
+Distance to l: 25.0
+Path: [a , b , e, f, i, l]
+
+Distance to j: Infinity
+Path: [j]
+
+It took 0.14 seconds to solve the problem.
